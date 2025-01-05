@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allô - Informatique</title>
+    <link rel="icon" type="image/png" href="./technologies-et-pratiques-durables-ib-Cegos.jpg" />
+    <style>
+        /* Style de base */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Menu de navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: right;
+             margin: 0 20px;
+        }
+
+        /* Section principale */
+        .hero {
+            background-color: #0e6733;
+            color: white;
+            padding: 200px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        .services {
+            padding: 40px 15%;
+            text-align: center;
+        }
+
+        .nvv {
+            padding: 40px 15%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .service {
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .service p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Section "À propos" */
+        .about {
+            background-color: #eaeaea;
+            padding: 40px 15%;
+            text-align: center;
+        }
+
+        .aboute {
+            background-color: #eaeaea;
+            padding: 10px 15%;
+            text-align: center;
+        }
+
+        /* Formulaire de contact */
+        .contact {
+            padding: 40px 0%;
+            text-align: left;
+            background-image: url('./uttg.jpg');
+            color: white;
+        }
+
+        .lien {
+            padding: 40px 15%;
+            text-align: left;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            /* Navigation */
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                text-align: center;
+            }
+
+            nav ul li {
+               
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 100px 20px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            /* Services Section */
+            .services {
+                padding: 30px 10%;
+            }
+
+            .nvv {
+                font-size: 30px;
+                padding: 20px 10%;
+            }
+
+            /* Service Cards */
+            .service {
+                width: 100%;
+                padding: 20px;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .service h3 {
+                font-size: 20px;
+            }
+
+            .service p {
+                font-size: 16px;
+            }
+
+            /* Contact Section */
+            .contact {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .lien {
+                padding: 20px;
+                text-align: center;
+            }
+
+            form input, form textarea {
+                width: 90%;
+            }
+
+            form button {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Hero Section */
+            .hero {
+                padding: 80px 10px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .nvv {
+                font-size: 25px;
+                padding: 20px;
+            }
+
+            /* Footer */
+            footer {
+                font-size: 14px;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="accueil" class="hero">
+        <h2>&#x1F449;Bienvenue chez Allô - Informatique&#x1F448;</h2>
+        <br>
+        <p>Nous vous aidons à installer et à gérer votre parc informatique.</p>
+        <p>Nous vous offrons également des solutions personnalisées pour améliorer la performance de vos équipements informatiques.</p>
+    </section>
+
+    <!-- Section des services -->
+    <section id="services" class="services">
+        <h1 class="nvv">Nos services :</h1>
+        <br>
+        <section class="aboute">
+            <h3>Entretien des systèmes informatiques</h3>
+            <p>Maintenance préventive et corrective de vos infrastructures informatiques.</p>
+        </section>
+        <br>
+        <section class="aboute">
+            <h3>Réparation à domicile</h3>
+            <p>Nous nous déplaçons chez vous pour diagnostiquer et améliorer votre système informatique.</p>
+        </section>
+        <br>
+        <section class="aboute">
+            <h3>Connexion Internet & Messagerie</h3>
+            <p>Mise en place et configuration de vos services de connexion Internet et de vos outils de messagerie.</p>
+        </section>
+        <br>
+        <section class="aboute">
+            <h3>Conception de sites Web</h3>
+            <p>Création de sites Internet vitrine sur mesure.</p>
+        </section>
+        <br>
+        <section class="aboute">
+            <h3>Réseau WiFi</h3>
+            <p>Installation de réseaux WiFi et paramétrage de vos appareils pour une connexion performante.</p>
+        </section>
+        <br>
+    </section>
+    
+    <div class="service" id="contact">
+        <h1 class="nvv">Nous contacter :</h1>
+    </div>
+    <!-- Section "À propos" -->
+    <section id="a-propos" class="about"></section>
+
+    <!-- Section de contact -->
+    <section id="contact">
+        <div class="contact">
+            <h2 id="contact-anc">Contactez-nous par téléphone au :</h2>
+            <h2 id="contact-anc">+33 (0)7 58 21 48 48</h2>
+            <br>
+            <h2 id="contact-anc">Nous nous déplaçons sur Paris et ses environs.</h2>
+            <br>
+            <h2>Vous pouvez également nous joindre par email à :</h2>
+            <a href="mailto:oui.alloinformatique@gmail.com" class="lien"><h2>oui.alloinformatique@gmail.com</h2></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Allô - Informatique Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Fonction pour détecter si l'élément est visible dans la fenêtre
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top >= 0 && rect.bottom <= window.innerHeight;
+        }
+
+        // Fonction d'animation pour les services
+        function animateServices() {
+            const services = document.querySelectorAll('.service');
+            services.forEach(service => {
+                if (isInViewport(service)) {
+                    service.style.opacity = '1';
+                    service.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Appliquer l'animation lorsque l'utilisateur fait défiler la page
+        window.addEventListener('scroll', animateServices);
+        window.addEventListener('load', animateServices); // Activer l'animation au chargement de la page
+    </script>
+</body>
+</html>
